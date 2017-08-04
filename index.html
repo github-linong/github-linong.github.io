@@ -1,12 +1,33 @@
 <!DOCTYPE html>
 <html>
+<header>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{padding:0;margin:0;}
+		header{position: fixed;top:0;left:0;right:0;height:50px;background-color: #f3f3f3;background-color: rgba(255,255,255,.7);border-bottom:1px solid #fff;outline:1px solid #000;overflow: hidden;}
+		nav .navLogo{position: relative;top:2px;}
+		nav ul{display: inline-block;vertical-align: top}
+		nav ul li{display: inline-block;line-height: 50px;}
+		nav ul li a{display: block;padding:0 50px;}
+		nav ul li.hover a,nav ul li:hover a{color:#fff;background-color: rgba(10,10,10,.8)}
+		nav a{color:#333;text-decoration: none}
+		.hotWarpper{height:calc(100vh);overflow: hidden;}
+		.hot{width:100%;min-width: 960px}
+	</style>
+</header>
 <body>
-	<h1>你好 github</h1>
-	<p>做技术的时候，往往不是我想怎么样就怎么样。而且在现有场景下我可以怎么样。</p>
-
+	<!-- <h1>你好 github</h1> -->
+	<!-- <p>做技术的时候，往往不是我想怎么样就怎么样。而且在现有场景下我可以怎么样。</p> -->
 	<header>
-		<nav></nav>
-		<img src="./images/header.jpg">
+		<nav>
+			<img src="./images/logo.jpg" class="Logo">
+			<ul>
+				<li> <a href="javascript:;">首页</a></li><li> <a href="javascript:;">简介</a></li><li> <a href="javascript:;">联系我们</a></li>
+			</ul>
+		</nav>
 	</header>
+	<div class="hotWarpper">
+		<img src="./images/header.jpg" class="hot">
+	</div>
 </body>
 </html>
