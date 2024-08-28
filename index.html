@@ -19,7 +19,7 @@
 <body>
 	<!-- <h1>你好 github</h1> -->
 	<!-- <p>做技术的时候，往往不是我想怎么样就怎么样。而且在现有场景下我可以怎么样。</p> -->
-	<header>
+	<!-- <header>
 		<nav>
 			<img src="./images/logo.jpg" class="Logo">
 			<ul>
@@ -29,6 +29,29 @@
 	</header>
 	<div class="hotWarpper">
 		<img src="./images/header.jpg" class="hot">
+	</div> -->
+	<div>
+		<input type="" id="input">
 	</div>
+	<script>
+		console.log(1)
+		input.focus()
+		setTimeout(()=>{
+			console.log(2);
+			input.focus()
+		},300)
+		window.addEventListener('load',()=>{
+			console.log(3);
+			input.focus()
+		})
+		window.addEventListener('visibilitychange',()=>{
+			console.log(4);
+			input.focus()
+		})
+		document.addEventListener('visibilitychange',()=>{
+			console.log(5);
+			input.focus()
+		})
+	</script>
 </body>
 </html>
